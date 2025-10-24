@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+}
+
+
+/* Makes the whole pizza section a grid */
+.pizza-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Each pizza card box */
+.pizza-card {
+  background-color: wheat;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  /* transition: transform 0.2s ease; */
+}
+
+/* .pizza-card:hover {
+  transform: scale(1.05);
+} */
+
+/* Image styling */
+.pizza-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
