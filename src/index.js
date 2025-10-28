@@ -64,5 +64,9 @@ function Pizza() {
   );
 }
 
+// //age more than or equal to 18, can buy alchl if not nt allowed
+// let message = <h1>Welcome, thanks for the purchase</h1>;
+// root.render(message);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
