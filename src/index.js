@@ -17,7 +17,7 @@ function App() {
       <Header />
       {/* Tagline only if shop is open */}
       {isOpen && (
-        <h3 className="menu-subtitle">
+        <h3 className="menu-subtitle" style={{fontSize:15}}>
           Authentic italian cuisine, all from our stone oven
         </h3>
       )}
@@ -99,7 +99,7 @@ function Footer({ isOpen }) {
         <div style={{ textAlign: "center" , fontWeight:'bold'}}>
           <p>We're currently open</p>
           <p> </p>
-          <button className="btn">Order</button>
+          <button className="btn" style={{ marginTop: "2rem" }}>Order</button>
         </div>
       ) : (
         <p style={{ textAlign: "center", fontWeight:'bold' }}>Sorry, we're closed</p>
