@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom/client';
 import "./index.css";
 
 function Header() {
-  return (
-    <header className="header">
-      <h1>Andy's Pizza Co.</h1>
-    </header>
-  );
+    return <h1
+    style = {{color:"orange", fontSize: "48px", textTransform: 'uppercase'}}
+    >Andy's Pizza Co.</h1>;
 }
 
 function App() {
@@ -63,6 +61,7 @@ function Menu() {
   return (
     <div className="menu">
       <h2>Our Menu</h2>
+      <h3>Authentic italian cuisine, all from our stone oven </h3>
       <div className="pizzas">
         {pizzas.map((pizza) => (
           <Pizza pizzaObj={pizza} key={pizza.name} />
@@ -87,7 +86,7 @@ function Pizza({ pizzaObj }) {
 
 function Footer() {
   const currentHour = new Date().getHours();
-  const isOpen = currentHour >= 10 && currentHour <= 22;
+  const isOpen = currentHour >= 9 && currentHour <= 22;
 
   return (
     <footer className="footer">
