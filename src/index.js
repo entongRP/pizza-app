@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 
 function Header() {
@@ -9,11 +9,20 @@ function Header() {
 }
 
 function App() {
+  const currentHour = new Date().getHours();
+  const isOpen = currentHour >= 9 && currentHour <= 22;
+
   return (
     <div className="container">
       <Header />
+      {/* Tagline only if shop is open */}
+      {isOpen && (
+        <h3 className="menu-subtitle">
+          Authentic italian cuisine, all from our stone oven
+        </h3>
+      )}
       <Menu />
-      <Footer />
+      <Footer isOpen={isOpen} />
     </div>
   );
 }
@@ -61,7 +70,6 @@ function Menu() {
   return (
     <div className="menu">
       <h2>Our Menu</h2>
-      <h3>Authentic italian cuisine, all from our stone oven </h3>
       <div className="pizzas">
         {pizzas.map((pizza) => (
           <Pizza pizzaObj={pizza} key={pizza.name} />
@@ -84,13 +92,18 @@ function Pizza({ pizzaObj }) {
   );
 }
 
-function Footer() {
-  const currentHour = new Date().getHours();
-  const isOpen = currentHour >= 9 && currentHour <= 22;
-
+function Footer({ isOpen }) {
   return (
     <footer className="footer">
-      {isOpen ? "We're currently open" : "Sorry, we're closed"}
+      {isOpen ? (
+        <div style={{ textAlign: "center" , fontWeight:'bold'}}>
+          <p>We're currently open</p>
+          <p> </p>
+          <button className="btn">Order</button>
+        </div>
+      ) : (
+        <p style={{ textAlign: "center", fontWeight:'bold' }}>Sorry, we're closed</p>
+      )}
     </footer>
   );
 }
