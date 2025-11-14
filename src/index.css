@@ -180,6 +180,37 @@ body {
   background-color: #e9bb24;
 }
 
+/* Search input styling */
+.search-input {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+/* Favourite pizza styling */
+.pizza.favourite {
+  border: 2px solid #edc84b;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+
+.favourite-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  color: #e74c3c;
+}
+
+.favourite-btn:hover {
+  text-decoration: underline;
+}
+
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
