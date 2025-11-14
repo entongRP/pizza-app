@@ -108,6 +108,9 @@ body {
 .pizza {
   display: flex;
   gap: 3.2rem;
+  background-color: #ffffff; /* white background */
+  padding: 1rem;             /* add some padding inside the card */
+  border-radius: 0.6rem;     /* rounded corners */
 }
 
 .pizza img {
