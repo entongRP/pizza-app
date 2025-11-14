@@ -121,15 +121,17 @@ function Pizza({ pizzaObj, isFavourite, toggleFavourite }) {
     <div className={`pizza ${isFavourite ? "favourite" : ""}`}>
       <img src={pizzaObj.photo} alt={pizzaObj.name} />
       <div>
-        <h3>{pizzaObj.name}</h3>
+        <div className="pizza-name-row">
+          <h3>{pizzaObj.name}</h3>
+          <button
+            className="favourite-btn"
+            onClick={() => toggleFavourite(pizzaObj.name)}
+          >
+            {isFavourite ? "❤️" : "♡"}
+          </button>
+        </div>
         <p>{pizzaObj.ingredients}</p>
         <span>${pizzaObj.price}</span>
-        <button
-          className="favourite-btn"
-          onClick={() => toggleFavourite(pizzaObj.name)}
-        >
-          {isFavourite ? "❤️" : "♡"}
-        </button>
       </div>
     </div>
   );
