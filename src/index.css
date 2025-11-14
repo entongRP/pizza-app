@@ -206,15 +206,10 @@ body {
   color: #e74c3c;
 }
 
-.favourite-btn:hover {
-  text-decoration: underline;
-}
-
 .pizza-name-row {
   display: flex;
   align-items: center;
-  gap: 2rem; 
-  /* space between name and heart */
+
 }
 
 
