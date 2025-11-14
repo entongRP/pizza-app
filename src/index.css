@@ -213,7 +213,7 @@ body {
 .pizza-name-row {
   display: flex;
   align-items: center;
-  gap: 0.8rem; /* space between name and heart */
+  /* gap: 0.8rem; space between name and heart */
 }
 
 
