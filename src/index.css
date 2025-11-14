@@ -200,7 +200,7 @@ body {
 .favourite-btn {
   background: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   cursor: pointer;
   margin-top: 0.5rem;
   color: #e74c3c;
@@ -213,7 +213,8 @@ body {
 .pizza-name-row {
   display: flex;
   align-items: center;
-  /* gap: 0.8rem; space between name and heart */
+  gap: 0.8rem; 
+  /* space between name and heart */
 }
 
 
