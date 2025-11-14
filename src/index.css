@@ -116,7 +116,8 @@ body {
 .pizza img {
   width: 12rem;
   aspect-ratio: 1;
-  align-self: start;
+  align-self: center;
+  
 }
 
 .pizza div {
