@@ -128,7 +128,7 @@ function Pizza({ pizzaObj, isFavourite, toggleFavourite }) {
           className="favourite-btn"
           onClick={() => toggleFavourite(pizzaObj.name)}
         >
-          {isFavourite ? "❤️ Favourite" : "♡ Add Favourite"}
+          {isFavourite ? "Favourited!" : "Add to Favourite!"}
         </button>
       </div>
     </div>
